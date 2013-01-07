@@ -1,3 +1,8 @@
+/**
+ * The prime factors of 13195 are 5, 7, 13 and 29.
+ * What is the largest prime factor of the number 600851475143 ?
+ */
+
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -17,6 +22,5 @@ int quadratic_sieve(long num)
 	while (sqrt(b) % 1 == 0) {
 		
 	}
-	
-	return array[0];
+	return b;
 }
