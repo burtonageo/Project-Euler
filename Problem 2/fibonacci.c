@@ -27,6 +27,10 @@ int main(int argc, char **argv)
 
 int fibonacci(int num)
 {
+	if (num < 0) {
+		return -1;
+	}
+	
 	switch(num) {
 		case 0:
 			return 0;

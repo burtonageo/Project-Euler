@@ -4,23 +4,46 @@
  */
 
 #include <math.h>
-#include <stdlib.h>
 #include <stdio.h>
 
 #include "largestprimefactor.h"
 
 int main(int argc, char **argv)
 {
-	printf("%d\n", quadratic_sieve(600851475143));
+	printf("\n%d\n", quadratic_sieve(600851475143));
 	return 0;
 }
 
-int quadratic_sieve(long num)
+int quadratic_sieve(long n)
 {
-	int a = sqrt(num);
-	int b = a * a - num;
-	while (sqrt(b) % 1 == 0) {
+	int smooth = 61;
+	int a = ceil(sqrt(n));
+	int values[60];
+	
+	/* Gather an array of numbers for sieving,
+	   each of which have the property (a - n)^2 */
+	for (int i=0; i<=60; i++) {
+		long b = (a * a) - n;
+		if (sqrt(b) % 1 == 0) {
+			printf("%n, ", b);
+			values[i] = b;
+		}
+		a++;
+		i++;
+	}
+	
+	/* Iterate through numbers, looking for ones
+	   with highest prime factors below the smooth number */
+	for (int i=0; i<=60;i++) {
 		
 	}
-	return b;
+	return values[0];
+}
+
+int factorize(int n)
+{
+	if (n < 2) {
+		return;
+	}
+	
 }

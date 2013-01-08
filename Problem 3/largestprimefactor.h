@@ -6,6 +6,6 @@
 #ifndef LARGESTPRIMEFACTOR_H
 #define LARGESTPRIMEFACTOR_H
 
-int quadratic_sieve(long num);
+int quadratic_sieve(long n);
 
 #endif // LARGESTPRIMEFACTOR_H
