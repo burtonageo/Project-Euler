@@ -50,7 +50,6 @@ int factorize(long n)
 	int a = (int)ceil(sqrt(n));
 	int b = (a * a) - n;
 	while (!is_perf_sqrt(b)) {
-		//printf ("a=%d, b=%d\n", a, b);
 		a = ++a;
 		b = a*a -n;
 	}
@@ -70,7 +69,7 @@ int factorize(long n)
 }
 */
 
-int is_sqrt(int n)
+int int_sqrt(int n)
 {
 	if (n == 0) {
 		return 0;
