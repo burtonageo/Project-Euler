@@ -6,6 +6,11 @@
 #ifndef LARGESTPRIMEFACTOR_H
 #define LARGESTPRIMEFACTOR_H
 
+#include <stdbool.h>
+
 int quadratic_sieve(long n);
+int factorize(long n);
+int is_sqrt(int n);
+bool is_perf_sqrt(int n);
 
 #endif // LARGESTPRIMEFACTOR_H
