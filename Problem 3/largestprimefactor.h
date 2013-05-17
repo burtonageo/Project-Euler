@@ -8,9 +8,6 @@
 
 #include <stdbool.h>
 
-int quadratic_sieve(long n);
-int factorize(long n);
-int int_sqrt(int n);
-bool is_perf_sqrt(int n);
+long largest_common_prime(long n);
 
 #endif // LARGESTPRIMEFACTOR_H
