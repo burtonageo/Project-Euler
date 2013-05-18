@@ -6,8 +6,6 @@
 #ifndef LARGESTPRIMEFACTOR_H
 #define LARGESTPRIMEFACTOR_H
 
-#include <stdbool.h>
-
 long largest_common_prime(long n);
 
 #endif // LARGESTPRIMEFACTOR_H
