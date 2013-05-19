@@ -71,6 +71,6 @@ int main(int argc, char **argv)
 		
 		product = 1;
 	}
-	printf("Largest sum: %d\n", largest_Product);
+	printf("Largest product: %d\n", largest_Product);
 	return 0;
 }
